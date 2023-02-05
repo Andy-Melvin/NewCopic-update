@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+}
+
+  .land1{
+     width:100%;
+     background-image:linear-gradient(rgba(1,1,1,0.3),rgba(1,1,1,0.3),rgba(1,1,1,0.3),rgba(1,1,1,0.3),rgba(1,1,1,0.3)),url("./homeBg.png");
+     transition: background-image 1s ease-out;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     
+     /* Remember to add some of the icons thay help to press Next */
+
+  }
+  .land1 p{
+    font-size: 36px;
+    color:white;
+    text-align: center;
+    
+  }
+  .logo img{
+    height: 9rem;
+  }
+  .vector img{
+    margin-top: 50px;
+    width: 5rem;
+
+  }
+  .explore{
+    border: 2px solid #ff0000;
+    background: #ff0000;
+    text-align: center;
+    padding: 8px 21px 8px 21px;
+    width: 10em;
+    height: 20px;
+    
+    
+  }
+  .explore:hover{
+    background-color: transparent;
+    transition: 0.5s;
+  }
+
+  .explore a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+
+  }
+  nav{
+    width: 100%;
+    /* background: #000; */
+    backface-visibility:hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 5.5rem;
+    position:fixed;
+    z-index: 2;
+  }
+  
+  .nav-bar ul{
+    margin-right: 0.5rem;
+    display: inline-flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    margin-top: 8px  
+  }
+  .nav-bar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px; 
+  }
+  .nav-bar ul li a:active{
+    color: #ff0000;
+  }
+  .nav-bar ul li::after{
+    content: '';
+    width: 0%;
+    height:4px;
+    background-color: #ff0000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+ 
+ 
+  .nav-bar ul li{
+    list-style: none;
+  }
+
+
+#text{
+ color: white;
+ text-align: center;
+ margin-top: 90px;
+ font-weight: bold;
+}
+#text p{
+    font-size: 3.3em;
+}
+.subtext{
+    opacity: 0.9;
+    font-size: 2em;
+}
+.subtext p{
+    font-size: 25px;
+    
+}
+#text p:nth-of-type(1){
+  margin-top: 60px;
+}
+#text p:nth-of-type(2){
+ font-size: 32px;
+ font-weight: normal;
+ opacity: 0.6;
+ margin-top: 4px;
+
+}
+#text p:nth-of-type(3){
+  font-size: 32px;
+ font-weight: normal;
+ opacity: 0.6;
+}
+#text p:nth-of-type(4){
+  font-size: 32px;
+ font-weight: normal;
+ opacity: 0.6;
+}
+ i{
+    color: rgb(255, 0, 0);
+    
+ }
+ .nav-bar ul li i{
+    width: 30px;
+ }
+ 
+
+ /* Slide show indicators, the cirlces ... */
+
+ #indicator-container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: flex-end;
+  
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 9px;
+  background-color: lightgray;
+}
+
+.active {
+  background-color: red;
+}
+ /* for the Arrow icons */
+
+ #next-arrow, #prev-arrow {
+  color: red;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+ 
+
+  
+
+  

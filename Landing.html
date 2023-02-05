@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="nodemailer.js"></script>
+    <script src="https://kit.fontawesome.com/834b86b1b6.js" crossorigin="anonymous"></script>
+    <script src="./dynamic.js"></script>
+    <script src="https://kit.fontawesome.com/834b86b1b6.js" crossorigin="anonymous"></script>
+    <title>Copic Rwanda</title>
+</head>
+<body id="home">
+    <nav id="navbar">
+        <div class="logo">
+            <a href=""><img src="./Logo_adobe_express (1) 2.svg" alt=""></a>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-page">About Us</a></li>
+                <li><a href="#contact-page">Contuct Us </a></li>
+                <li><a href="./Sign-in.html">Sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="land1" id="home-page">
+            <div id="about"> 
+            <p>Photography preserves special moments.<br>
+            Inspire us to live more,<br>
+            see new perspectives,<br>
+            allow self-expression & unites us together.</p>
+            </div>
+            <div class="sign-up">
+                <a href="./sign-up-as.html">Sign up</a>
+            </div>
+            <div class="vector">
+                <img src="./Vector 64.png" id="home-page" alt="logo Copic">
+            </div>
+        </section>
+        <section class="section-2" id="about-page">
+            <div class="what-we-do">
+                <p>What We do</p>
+            </div>
+
+            <div class="description">
+                <p>
+            At Copic we want to connect our Users to Photographers, all based in Rwanda.<br>
+            Whatever pictures they want  and no matter where they live, all we do is to give<br>
+            them access to the best of the best Photographers, let them experience beyond<br>
+            pictures to reality beacuase great pictures hold onto great memories, enhancing<br>
+            feelings .We are the biggest fans of pictures and we are looking to help you find<br>
+            “Your next favorite Photographer.”
+                </p>
+            </div>
+
+            <div class="how-it-works">
+                <p>How it works</p>
+            </div>
+            <!-- <p>this is a code for the input range</p> -->
+            
+            
+            <div id="range-container">
+                <label for="range-input">My Range</label>
+                <input type="range" id="range-input">
+                <p id="range-value"></p>
+              </div>
+
+        </section>
+        <section class="section-3" id="about-page">
+         <div>
+            <div class="testimonials">Testimonials</div>
+            <div class="review">Our users love<br>what we do</div>
+                <div class="connection">
+                    <p>Over 100 Photographers & their Clients use Copic <br>
+                        to connect, and get their wonderful moments captures <br> 
+                        all at one </p>
+                </div>
+               <div class="connect-now">Connect now!</div>
+               <div class="call-to-action">
+                <p><a href="./sign-up-as.html">Sign up</a></p>
+               </div>
+            </div>
+            <div class="box-red">
+                <div class="prof-img">
+                    <div class="align">
+                       <blockquote class="quote">To be honest, Copic became the answer to all
+                        Photographers as well as their Clients, because 
+                        it established a tremendous connection that
+                        didn’t exist before.</blockquote> 
+                        <div class="profile">
+                            <img src="./felix-profile.jpg" alt="profile">
+                            <div>
+                                <p><strong>MANZI Felix</strong></p>
+                                <p>Photographer</p>
+                            </div>
+                </div>
+            </div>
+         </div>
+        </section>
+
+
+        <section class="section-4" id="contact-page">
+           <div>
+             <div class="contuct-us">
+                Contact us
+            </div>
+            <div class="review">
+                We'd love to<br>hear from you
+            </div>
+            <div class="feed-text">
+                In case you have a question or feedback, feel free <br>
+                to let us know what’s on your mind. We’d love to hear from you.
+            </div> 
+            <div class="fill-form">
+             <p>Fill the form</p>   
+            </div>
+           </div>
+           
+           <div class="form">
+            <h1>CONTACT US</h1>
+                <form action="http://localhost:3000/send-email" class="inputs" method="post">
+                    <input type="text" name="Names" placeholder="Names">
+                    <input type="text" name="Email" placeholder="Email">
+                    <input type="text" name="Phone" placeholder="Phone">
+                    <textarea name="text-area" id="" cols="50" rows="10" placeholder="Message"></textarea>
+                    <input type="Submit" id="submit" name="submit">
+                </form>
+            </div>
+    
+    </main>
+        <footer>
+            <img src="./Logo_adobe_express (1) 2.svg" alt="Copic Logo">
+            
+            <ul>
+                <div class="policies">
+                <li><a href="">Privacy policy</a></li>
+                </div>
+                <div class="copyright">
+                    <li>© 2023 Copic @Andy Melvin</li>
+                </div>
+                <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="terms-of-service">
+                    <li><a href="">Terms of service</a></li>
+                </div>
+                
+            </ul> 
+        
+           
+          </footer>
+</body>
+</html>
